@@ -7,7 +7,7 @@ lock = threading.Lock()
 
 def handle_client(conn, addr):
     global players
-    conn.send("Welcome to the Dice Game! Type 'roll' to roll the dice.\n".encode())
+    conn.send("Welcome to the Dice Game! \n".encode())
 
    
     msg = conn.recv(1024).decode().strip()
